@@ -36,7 +36,7 @@
       <file leaf-file-name="Locatie.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Locatie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="93">
               <caret line="31" column="196" selection-start-line="31" selection-start-column="196" selection-end-line="31" selection-end-column="196" />
               <folding />
             </state>
@@ -84,10 +84,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP_XAMPP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2078" />
-    <option name="y" value="2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1017" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,15 +188,15 @@
       <workItem from="1498555380270" duration="1665000" />
       <workItem from="1498559851576" duration="1361000" />
       <workItem from="1498734564555" duration="288000" />
-      <workItem from="1499083557593" duration="1522000" />
+      <workItem from="1499083557593" duration="1828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20573000" />
+    <option name="totallyTimeSpent" value="20879000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2078" y="2" width="1920" height="1017" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -598,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Locatie.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="93">
           <caret line="31" column="196" selection-start-line="31" selection-start-column="196" selection-end-line="31" selection-end-column="196" />
           <folding />
         </state>

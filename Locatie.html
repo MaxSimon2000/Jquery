@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js">
+    </script>
+    <style>
+        #map {
+            height: 100%;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div data-role="navbar" class="ui-navbar" role="navigation">
+    <ul class="ui-grid-c">
+        <li class="ui-block-a"><a href="index.html" class="ui-link ui-btn">Home</a></li>
+        <li class="ui-block-b"><a href="Verzamel.html" class="ui-link ui-btn">Verzamel</a></li>
+        <li class="ui-block-c"><a href="Agenda.html" class="ui-link ui-btn">Agenda</a></li>
+        <li class="ui-block-d"><a href="Locatie.html" class="ui-link ui-btn">Locatie</a></li>
+    </ul>
+</div>
+<div id="map"></div>
+<script>
+    // Dit is om te laten zien waar je op dit moment bent er is nog wel een bug als je op de navigatie klikt om naar de map te gaan doet hij het eerst niet maar als je dan ververst kom de map wel //
+    var map, infoWindow;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                infoWindow.open(map);
+                map.setCenter(pos);
+            }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+            });
+        } else {
+            handleLocationError(false, infoWindow, map.getCenter());
+        }
+    }
+
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6-r9ouNNnyvzTAJRVC31xVsVNZCzWCQA&callback=initMap">
+</script>
+</body>
+</html>

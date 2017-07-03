@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nigger</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js">
+    </script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+    </script>
+</head>
+<body>
+<div data-role = "page" class = "page" id="homepage">
+    <div class = "header" data-role = "header" style="overflow: hidden;">
+        <h1>Welkom</h1>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Verzamel.html">Verzamel</a></li>
+                <li><a href="Agenda.html">Agenda</a></li>
+                <li><a href="Locatie.html">Locatie</a></li>
+            </ul>
+        </div><!--navbar-->
+    </div><!-- /header -->
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all" data-transition="pop">Kaarten bestellen</a>
+        <div style="width:1000px;" data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                    <form name="form" id="form" action="Verzamel1.html">
+            <fieldset data-role="controlgroup">
+                    <legend>Kies een concert</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+                        <label for="radio-choice-1">Shakira</label>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+                        <label for="radio-choice-2">Nas</label>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+                        <label for="radio-choice-3">Kendrick Lamar</label>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+                        <label for="radio-choice-4">MC Hammer</label>
+            </fieldset>
+            <label for="aantal">Aantal Kaarten</label>
+            <input type="range" name="aantal" id="aantal" min="1" max="15" />
+            <label for="text-basic">Mobiele telefoon</label>
+            <input type="text" name="text-basic" id="text-basic" value="">
+            <label for="text-basic1">Email</label>
+            <input type="text" name="text-basic" id="text-basic1" value="">
+            <input type="text" name="plaats" id="plaats" list="steden"
+                   placeholder="steden">
+            <datalist id="steden">
+                <option value="Amsterdam">
+                <option value="Parijs">
+                <option value="Berlijn">
+                <option value="New York">
+                <option value="Los Angeles">
+                <option value="Sydney">
+            </datalist>
+            <input type="submit" id="submit" value="verzend">
+        </form>
+    </div>
+    <div class="footer" data-role="footer">
+        <h1>Footer</h1>
+    </div><!-- /Footer -->
+</div><!-- /homepage -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
